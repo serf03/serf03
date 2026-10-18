@@ -1,0 +1,96 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 240" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#090D16" />
+      <stop offset="50%" stop-color="#0F172A" />
+      <stop offset="100%" stop-color="#0B1120" />
+    </linearGradient>
+    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38BDF8" />
+      <stop offset="50%" stop-color="#818CF8" />
+      <stop offset="100%" stop-color="#10B981" />
+    </linearGradient>
+    <linearGradient id="cardBg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1E293B" stop-opacity="0.7" />
+      <stop offset="100%" stop-color="#0F172A" stop-opacity="0.9" />
+    </linearGradient>
+    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M 32 0 L 0 0 0 32" fill="none" stroke="#1E293B" stroke-width="0.7" stroke-opacity="0.65" />
+    </pattern>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="24" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Main Background -->
+  <rect width="900" height="240" rx="14" fill="url(#bg)" stroke="#1E293B" stroke-width="1.5" />
+  <rect width="900" height="240" rx="14" fill="url(#grid)" />
+
+  <!-- Subtle Glow Orbs -->
+  <circle cx="120" cy="40" r="90" fill="#38BDF8" opacity="0.08" filter="url(#glow)" />
+  <circle cx="780" cy="200" r="110" fill="#10B981" opacity="0.07" filter="url(#glow)" />
+
+  <!-- Top Terminal Bar -->
+  <rect x="0" y="0" width="900" height="34" rx="14" fill="#060911" opacity="0.85" />
+  <line x1="0" y1="34" x2="900" y2="34" stroke="#1E293B" stroke-width="1" />
+  <circle cx="22" cy="17" r="5.5" fill="#EF4444" />
+  <circle cx="40" cy="17" r="5.5" fill="#F59E0B" />
+  <circle cx="58" cy="17" r="5.5" fill="#10B981" />
+  <text x="450" y="21" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace" font-size="12" fill="#64748B" text-anchor="middle">
+    ismael-aybar@serf03:~/arquitectura-sistemas — zsh
+  </text>
+
+  <!-- Left Content: Identity & Positioning -->
+  <text x="42" y="72" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace" font-size="13" fill="#10B981" font-weight="600">
+    $ whoami --stack=full-stack --focus=saas-pos-proptech
+  </text>
+
+  <text x="42" y="114" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="34" font-weight="800" fill="#F8FAFC" letter-spacing="-0.5">
+    Ismael Aybar <tspan fill="url(#accent)" font-size="24" font-weight="600">@serf03</tspan>
+  </text>
+
+  <text x="42" y="144" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="16" font-weight="600" fill="#94A3B8">
+    Arquitecto de Software Full-Stack &amp; Creador de Productos Digitales
+  </text>
+
+  <!-- Domain Pills -->
+  <g transform="translate(42, 168)">
+    <rect x="0" y="0" width="128" height="28" rx="6" fill="#0F172A" stroke="#38BDF8" stroke-width="1" stroke-opacity="0.5" />
+    <text x="64" y="18" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="11.5" font-weight="600" fill="#38BDF8" text-anchor="middle">⚡ SaaS &amp; Cloud</text>
+
+    <rect x="138" y="0" width="138" height="28" rx="6" fill="#0F172A" stroke="#818CF8" stroke-width="1" stroke-opacity="0.5" />
+    <text x="207" y="18" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="11.5" font-weight="600" fill="#818CF8" text-anchor="middle">💳 Sistemas POS</text>
+
+    <rect x="286" y="0" width="146" height="28" rx="6" fill="#0F172A" stroke="#10B981" stroke-width="1" stroke-opacity="0.5" />
+    <text x="359" y="18" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="11.5" font-weight="600" fill="#10B981" text-anchor="middle">🏢 PropTech &amp; GIS</text>
+
+    <rect x="442" y="0" width="152" height="28" rx="6" fill="#0F172A" stroke="#F59E0B" stroke-width="1" stroke-opacity="0.5" />
+    <text x="518" y="18" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="11.5" font-weight="600" fill="#F59E0B" text-anchor="middle">🤖 Automatización</text>
+  </g>
+
+  <!-- Right Code Card -->
+  <g transform="translate(625, 54)">
+    <rect width="242" height="156" rx="10" fill="url(#cardBg)" stroke="#334155" stroke-width="1" />
+    <text x="16" y="26" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="11" fill="#64748B">// runtime_status.ts</text>
+    <text x="16" y="48" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="11.5" fill="#E2E8F0">
+      <tspan fill="#38BDF8">const</tspan> engineer = {
+    </text>
+    <text x="28" y="68" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="11" fill="#94A3B8">
+      role: <tspan fill="#10B981">"Full-Stack Eng"</tspan>,
+    </text>
+    <text x="28" y="86" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="11" fill="#94A3B8">
+      stack: [<tspan fill="#F59E0B">"TS"</tspan>, <tspan fill="#F59E0B">"Next"</tspan>, <tspan fill="#F59E0B">"Py"</tspan>],
+    </text>
+    <text x="28" y="104" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="11" fill="#94A3B8">
+      mobile: <tspan fill="#38BDF8">"React Native"</tspan>,
+    </text>
+    <text x="28" y="122" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="11" fill="#94A3B8">
+      infra: <tspan fill="#818CF8">"Docker + Cloud"</tspan>
+    </text>
+    <text x="16" y="140" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="11.5" fill="#E2E8F0">};</text>
+  </g>
+
+  <!-- Bottom Gradient Accent Line -->
+  <rect x="1" y="236" width="898" height="3" rx="1.5" fill="url(#accent)" />
+</svg>
